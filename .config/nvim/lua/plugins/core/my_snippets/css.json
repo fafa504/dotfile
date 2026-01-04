@@ -1,0 +1,67 @@
+{
+    "Media Query": {
+        "prefix": "mq",
+        "description": "@media query block",
+        "body": [
+            "@media (${1:min-width}: ${2:768px}) {",
+            "  ${0}",
+            "}"
+        ]
+    },
+    "Flex Center": {
+        "prefix": "flexc",
+        "description": "Center with Flexbox",
+        "body": [
+            "display: flex;",
+            "align-items: center;",
+            "justify-content: center;"
+        ]
+    },
+    "Grid 12 Simple": {
+        "prefix": "grid12",
+        "description": "12-column CSS grid",
+        "body": [
+            "display: grid;",
+            "grid-template-columns: repeat(12, 1fr);",
+            "gap: ${1:1rem};"
+        ]
+    },
+    "CSS Variable": {
+        "prefix": "var",
+        "description": "Custom property declaration",
+        "body": [
+            "--${1:name}: ${2:value};"
+        ]
+    },
+    "Use CSS Variable": {
+        "prefix": "usevar",
+        "description": "var(--name[, fallback])",
+        "body": [
+            "var(--${1:name}${2:, ${3:fallback}})"
+        ]
+    },
+    "Keyframes": {
+        "prefix": "kf",
+        "description": "@keyframes block",
+        "body": [
+            "@keyframes ${1:name} {",
+            "  0% { ${2} }",
+            "  100% { ${3} }",
+            "}"
+        ]
+    },
+    "Animation Shorthand": {
+        "prefix": "anim",
+        "description": "animation shorthand",
+        "body": [
+            "animation: ${1:name} ${2:1s} ${3:ease} ${4:0s} ${5:1} ${6:normal} ${7:forwards};"
+        ]
+    },
+    "Clamp Fluid Size": {
+        "prefix": "clamp",
+        "description": "clamp(min, pref, max)",
+        "body": [
+            "clamp(${1:1rem}, ${2:2vw} + ${3:0.5rem}, ${4:2rem})"
+        ]
+    }
+}

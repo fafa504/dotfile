@@ -1,0 +1,33 @@
+if [ "$#" -eq 0 ]; then
+    echo "Usage: ccrun <file1.cpp> [file2.c] ..."
+    return 1
+fi
+
+for file in "$@"; do
+    if [ -f "$file" ]; then
+        filename=$(basename -- "$file")
+        filename_no_ext="${filename%.*}"
+
+        compiler="g++"
+        if [[ "$file" == *.c ]]; then
+            compiler="gcc"
+        fi
+
+        echo "Compiling $file..."
+        $compiler "$file" -o "$filename_no_ext"
+
+        if [ $? -eq 0 ]; then
+            echo "Compilation successful. Running $filename_no_ext..."
+            ./"$filename_no_ext"
+            echo ""
+            # Clean up the compiled binary
+            rm "$filename_no_ext"
+        else
+            echo "Compilation failed for $file."
+            echo ""
+        fi
+    else
+        echo "Error: File '$file' not found."
+        echo ""
+    fi
+done

@@ -1,0 +1,28 @@
+Config(
+  prefix: ":f",
+  default_command: "xdg-open {}",
+
+//  max_entries: 10,
+
+  options: (
+    hidden: false,
+    patterns: [],
+  ),
+
+  scopes: [
+    (
+      path: "/home/mintori/Documents",
+      prefix: ":cp",
+      command: Some("cat '{}' | wl-copy"),
+      excludes: ["secret"],
+    ),
+
+    (
+      path: "/home/mintori/Documents/[2] Obsidian/06_Script/Prompt",
+      prefix: "prompt ",
+      command: Some("cat '{}' | wl-copy"),
+      excludes: [],
+    ),
+  ],
+)
+

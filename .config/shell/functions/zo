@@ -1,0 +1,11 @@
+local dir=$(
+    zoxide query -l | fzf \
+        --ansi \
+        --reverse \
+        --prompt='📁  Jump to: ' \
+        --border \
+        --margin=1,2 \
+        --marker='✓ '
+) || return
+
+z "$dir"

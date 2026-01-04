@@ -1,0 +1,8 @@
+yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best" \
+    --merge-output-format mp4 \
+    --embed-subs \
+    --embed-metadata \
+    --embed-thumbnail \
+    --restrict-filenames \
+    --progress \
+    "$@"

@@ -1,0 +1,60 @@
+Config(
+    show_log: false,
+    max_entries: 20,
+    scopes: [
+        (
+            prefix: "/",
+            source: "/home/mintori/.config/anyrun/scripts/anyrun-launcher.sh",
+            on_select: "/home/mintori/.config/anyrun/scripts/anyrun-launcher.sh '{}'",
+        ),
+
+        (
+            prefix: "prj ",
+            source: "fd . /home/mintori/Projects --max-depth 1 --exec basename {}",
+            on_select: "kitty --directory /home/mintori/Projects/{}",
+        ),
+
+        (
+            prefix: "aud ",
+            source: "sh /home/mintori/.config/anyrun/scripts/anyrun-audio-switcher.sh",
+            on_select: "sh /home/mintori/.config/anyrun/scripts/anyrun-audio-switcher.sh '{}'",
+        ),
+
+        (
+            prefix: "git",
+            source: "sh /home/mintori/.config/anyrun/scripts/anyrun-git-search.sh",
+            on_select: "sh /home/mintori/.config/anyrun/scripts/anyrun-git-search.sh '{}'",
+        ),
+
+        (
+            prefix: "sync",
+            source: "sh /home/mintori/.config/anyrun/scripts/anyrun-sync-manager.sh",
+            on_select: "sh /home/mintori/.config/anyrun/scripts/anyrun-sync-manager.sh '{}'",
+        ),
+
+        (
+            prefix: "power",
+            source: "sh /home/mintori/.config/anyrun/scripts/anyrun-power.sh",
+            on_select: "sh /home/mintori/.config/anyrun/scripts/anyrun-power.sh '{}'",
+        ),
+
+        (
+            prefix: "w",
+            source: "sh /home/mintori/.config/anyrun/scripts/anyrun-website.sh",
+            on_select: "sh /home/mintori/.config/anyrun/scripts/anyrun-website.sh '{}'",
+        ),
+
+        (
+            prefix: "config",
+            source: "sh /home/mintori/.config/anyrun/scripts/anyrun-config.sh",
+            on_select: "sh /home/mintori/.config/anyrun/scripts/anyrun-config.sh '{}'",
+        ),
+
+        (
+            prefix: "config ",
+            source: "fd . /home/mintori/.config --max-depth 1 --exec basename {}",
+            on_select: "kitty --directory /home/mintori/.config/{}",
+        ),
+    ]
+)
+

@@ -1,0 +1,4 @@
+local var
+var=$(printenv | cut -d= -f1 | fzf --prompt 'env:' --preview='printenv {}') \
+    && echo "$var=$(printenv "$var")" \
+    && unset var

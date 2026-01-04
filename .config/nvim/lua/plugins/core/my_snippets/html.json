@@ -1,0 +1,75 @@
+{
+    "HTML5 Boilerplate": {
+        "prefix": "html5",
+        "description": "HTML5 document skeleton",
+        "body": [
+            "<!doctype html>",
+            "<html lang=\"${1:en}\">",
+            "<head>",
+            "  <meta charset=\"utf-8\" />",
+            "  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />",
+            "  <title>${2:Title}</title>",
+            "  <meta name=\"description\" content=\"${3}\" />",
+            "  <link rel=\"stylesheet\" href=\"${4:styles.css}\">",
+            "</head>",
+            "<body>",
+            "  ${0}",
+            "  <script src=\"${5:main.js}\" defer></script>",
+            "</body>",
+            "</html>"
+        ]
+    },
+    "Link stylesheet": {
+        "prefix": "linkcss",
+        "description": "<link rel='stylesheet'> tag",
+        "body": [
+            "<link rel=\"stylesheet\" href=\"${1:styles.css}\" />"
+        ]
+    },
+    "Script (module)": {
+        "prefix": "scriptm",
+        "description": "<script type=module>",
+        "body": [
+            "<script type=\"module\">",
+            "  ${0}",
+            "</script>"
+        ]
+    },
+    "Script (src defer)": {
+        "prefix": "scriptd",
+        "description": "<script src defer>",
+        "body": [
+            "<script src=\"${1:main.js}\" defer></script>"
+        ]
+    },
+    "Meta viewport": {
+        "prefix": "viewport",
+        "description": "Responsive viewport meta tag",
+        "body": [
+            "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />"
+        ]
+    },
+    "Image": {
+        "prefix": "img",
+        "description": "<img> with alt and size",
+        "body": [
+            "<img src=\"${1:img.png}\" alt=\"${2:description}\" width=\"${3}\" height=\"${4}\" />"
+        ]
+    },
+    "Anchor": {
+        "prefix": "a",
+        "description": "<a href>",
+        "body": [
+            "<a href=\"${1:#}\">${0:link}</a>"
+        ]
+    },
+    "Div with class": {
+        "prefix": "divc",
+        "description": "<div class='...'>",
+        "body": [
+            "<div class=\"${1:container}\">",
+            "  ${0}",
+            "</div>"
+        ]
+    }
+}

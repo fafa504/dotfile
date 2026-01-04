@@ -1,0 +1,11 @@
+local tmpfile
+tmpfile=$(mktemp /tmp/cmd-output-XXXXXX.md)
+
+if [[ $# -eq 0 ]]; then
+    touch "$tmpfile"
+else
+    "$@" | tee "$tmpfile" >/dev/null
+fi
+
+nvim "$tmpfile"
+rm -f "$tmpfile"

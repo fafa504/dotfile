@@ -1,0 +1,41 @@
+
+# 2025-05-22 21:03:38.442136
++n
+
+# 2025-05-22 21:03:51.020621
++/add mpv.conf
+
+# 2025-05-22 21:03:55.208677
++Option --focus-on-open was removed: Replaced by --focus-on
++Error parsing option no-focus-on-open (option not found)
++/home/mintori/.config/mpv/mpv.conf:22: setting option no-focus-on-open='' failed.
++Error parsing option cache-default (option not found)
++/home/mintori/.config/mpv/mpv.conf:94: setting option cache-default='500000' failed.
++Error parsing option cache-backbuffer (option not found)
++/home/mintori/.config/mpv/mpv.conf:95: setting option cache-backbuffer='500000' failed.
++[protocol_hook] 
++[protocol_hook] false
++[protocol_hook] 
++[protocol_hook] /home/mintori/.config/mpv
++[protocol_hook] /home/mintori/.config/mpv
++[protocol_hook] /home/mintori/.config/mpv
++[protocol_hook] { ["cwd"] = ,["ipcMode"] = false,["proxy"] = ,["nogeometry"] = true,["stream_quality"] = best,} 
++Resuming playback. This behavior can be disabled with --no-resume-playback.
++[auto_profiles] Applying auto profile: stream-no-ytdl
++[protocol_hook] not a mpv url: 1. Introduction.mp4
++client removed during hook handling
++Can not open external file 1. Introduction.srt.
++Can not open external file 1. Introduction.srt.
++ ● Video  --vid=1  (h264 1280x720 30 fps) [default]
++ ● Audio  --aid=1  (aac 2ch 48000 Hz 128 kbps) [default]
++Using hardware decoding (nvdec).
++AO: [pipewire] 48000Hz stereo 2ch floatp
++VO: [gpu-next] 1280x720 cuda[nv12]
++Saving state.
++AV: 00:01:10 / 00:06:44 (17%) A-V:  0.000
++[auto_profiles] Restoring profile: stream-no-ytdl
++Exiting... (Quit)
++warning: queue 0x77635c282010 destroyed while proxies still attached:
++  wl_registry#71 still attached
++  wl_registry#48 still attached
++fix any erros 

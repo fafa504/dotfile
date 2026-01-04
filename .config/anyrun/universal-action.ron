@@ -1,0 +1,117 @@
+Config(
+  prefix: "ua ",
+  show_log: false,
+  actions: [
+    // --- [ GROUP 1: URL ACTIONS ] ---
+    Action(
+      name: "Generate QR Code",
+      data_type: "Url",
+      command: "qrencode -o /tmp/qr.png '{clip}' && gwenview /tmp/qr.png",
+    ),
+    Action(
+      name: "Open in Firefox (Private)",
+      data_type: "Url",
+      command: "firefox --private-window '{clip}'",
+    ),
+    Action(
+      name: "Stream Video (mpv)",
+      data_type: "Url",
+      command: "mpv '{clip}'",
+    ),
+    Action(
+      name: "Download Video (yt-dlp)",
+      data_type: "Url",
+      command: "alacritty -e yt-dlp '{clip}'",
+    ),
+    Action(
+      name: "Download Audio MP3 (yt-dlp)",
+      data_type: "Url",
+      command: "alacritty -e yt-dlp -x --audio-format mp3 '{clip}'",
+    ),
+    Action(
+      name: "Shorten URL (0x0.st)",
+      data_type: "Url",
+      command: "curl -F'shorten={clip}' https://0x0.st | wl-copy && notify-send 'Success' 'Shortened URL copied to clipboard'",
+    ),
+    Action(
+      name: "View on Wayback Machine",
+      data_type: "Url",
+      command: "xdg-open https://web.archive.org/web/*/{clip}",
+    ),
+    Action(
+      name: "Scan URL (VirusTotal)",
+      data_type: "Url",
+      command: "xdg-open https://www.virustotal.com/gui/search/{clip}",
+    ),
+
+    // --- [ GROUP 2: FILE ACTIONS ] ---
+    Action(
+      name: "Upload File (0x0.st)",
+      data_type: "File",
+      command: "curl -F'file=@{clip}' https://0x0.st | wl-copy && notify-send 'Upload Complete' 'Link copied to clipboard'",
+    ),
+    Action(
+      name: "Send via Magic Wormhole",
+      data_type: "File",
+      command: "alacritty -e wormhole send '{clip}'",
+    ),
+    Action(
+      name: "Compress to Zip Archive",
+      data_type: "File",
+      command: "zip -r '{clip}.zip' '{clip}' && notify-send 'Success' 'Archive created'",
+    ),
+    Action(
+      name: "Extract Text from Image (OCR)",
+      data_type: "File",
+      command: "tesseract '{clip}' stdout | wl-copy && notify-send 'OCR' 'Text copied to clipboard'",
+    ),
+    Action(
+      name: "Securely Delete File (shred)",
+      data_type: "File",
+      command: "alacritty -e shred -u -v -z '{clip}'",
+    ),
+    Action(
+      name: "Open Terminal in Directory",
+      data_type: "File",
+      command: "cd $(dirname '{clip}') && alacritty",
+    ),
+
+    // --- [ GROUP 3: TEXT ACTIONS ] ---
+    Action(
+      name: "Search on Google",
+      data_type: "Text",
+      command: "xdg-open 'https://www.google.com/search?q={clip}'",
+    ),
+    Action(
+      name: "Format JSON (jq)",
+      data_type: "Text",
+      command: "echo '{clip}' | jq . | wl-copy && notify-send 'JSON' 'Formatted and copied to clipboard'",
+    ),
+    Action(
+      name: "Word and Character Count",
+      data_type: "Text",
+      command: "notify-send 'Statistics' \"Words: $(echo '{clip}' | wc -w)\nChars: $(echo -n '{clip}' | wc -m)\"",
+    ),
+    Action(
+      name: "Convert to UPPERCASE",
+      data_type: "Text",
+      command: "echo '{clip}' | tr '[:lower:]' '[:upper:]' | wl-copy",
+    ),
+    Action(
+      name: "Convert to lowercase",
+      data_type: "Text",
+      command: "echo '{clip}' | tr '[:upper:]' '[:lower:]' | wl-copy",
+    ),
+    Action(
+      name: "Decode Base64 String",
+      data_type: "Text",
+      command: "echo '{clip}' | base64 -d | wl-copy && notify-send 'Base64' 'Decoded and copied'",
+    ),
+    Action(
+      name: "Whois Lookup (IP/Domain)",
+      data_type: "Text",
+      command: "alacritty -e whois '{clip}'",
+    ),
+  ]
+)
+

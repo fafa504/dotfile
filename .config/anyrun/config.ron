@@ -1,0 +1,21 @@
+// lib: /usr/lib/anyrun
+Config(
+  width: Fraction(0.4),
+  y: Fraction(0.2),
+  hide_icons: false,
+  show_results_immediately: true,
+  ignore_exclusive_zones: false,
+
+  plugins:[
+    "/home/mintori/.config/anyrun/plugins/libanyrun_findfiles.so",
+    "/home/mintori/.config/anyrun/plugins/libanyrun_websearch.so",
+    "/home/mintori/.config/anyrun/plugins/libanyrun_shell_wrapper.so",
+    "/home/mintori/.config/anyrun/plugins/libanyrun_calc.so",
+    "/home/mintori/.config/anyrun/plugins/libanyrun_universal_action.so",
+    "/home/mintori/.config/anyrun/plugins/libanyrun_zoxide.so",
+    "/home/mintori/.config/anyrun/plugins/libanyrun_applications.so",
+    "libsymbols.so",
+    "libtranslate.so"
+  ]
+)
+

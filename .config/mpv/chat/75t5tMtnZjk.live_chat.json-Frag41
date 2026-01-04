@@ -1,0 +1,145 @@
+{
+  "responseContext": {
+    "serviceTrackingParams": [
+      {
+        "service": "CSI",
+        "params": [
+          {
+            "key": "c",
+            "value": "WEB"
+          },
+          {
+            "key": "cver",
+            "value": "2.20240910.03.00"
+          },
+          {
+            "key": "yt_li",
+            "value": "0"
+          },
+          {
+            "key": "GetLiveChat_rid",
+            "value": "0x8ee677937bbb8a8b"
+          }
+        ]
+      },
+      {
+        "service": "GFEEDBACK",
+        "params": [
+          {
+            "key": "logged_in",
+            "value": "0"
+          },
+          {
+            "key": "e",
+            "value": "23804281,23966208,23986026,23998056,24004644,24077241,24135942,24166867,24181174,24186125,24241378,24290971,24439361,24453989,24459435,24542367,24543669,24548629,24550458,24566687,24699899,39325347,39325798,39325815,39325854,39326587,39326599,39326610,39326620,39326664,39326684,39326965,39326986,39327052,39327093,39327115,39327368,51009781,51010235,51017346,51020077,51020570,51020845,51025415,51030103,51037346,51037353,51041512,51043775,51050361,51053689,51057848,51057855,51063643,51064835,51072748,51078652,51091058,51095478,51098297,51098299,51105630,51111738,51112979,51115184,51116067,51123611,51124104,51133103,51134506,51141472,51144925,51145218,51151739,51152050,51157411,51157430,51157432,51157841,51158514,51160338,51160545,51162170,51165467,51169118,51176421,51176511,51177013,51178320,51178329,51178346,51178351,51178982,51183909,51184022,51184990,51186528,51189403,51190652,51190722,51194136,51195231,51197683,51197690,51197701,51197706,51200251,51200258,51200291,51200300,51201348,51201367,51201374,51201383,51201430,51201437,51201444,51201451,51204329,51204586,51209050,51212464,51212553,51212569,51213887,51217504,51219800,51221011,51221146,51222695,51223961,51224135,51225397,51226860,51227037,51227774,51227925,51228350,51228352,51228767,51228774,51228783,51228798,51228809,51228814,51230241,51230396,51230478,51231814,51233333,51234407,51236019,51236665,51237842,51239093,51241028,51242448,51243940,51244977,51246281,51246305,51248255,51248734,51248748,51250110,51251509,51251811,51251836,51251849,51255654,51255674,51255676,51255680,51255743,51256074,51256084,51256733,51257853,51257897,51257900,51257914,51257938,51258066,51258139,51258190,51258456,51258836,51259133,51261424,51263449,51264983,51265345,51265354,51265367,51266454,51266946,51269213,51269632,51269667,51270063,51270086,51271963,51272314,51272458,51272495,51272500,51272513,51272534,51272572,51272585,51273446,51275152,51275161,51275172,51275185,51275194,51275654,51275782,51276566,51276640,51278866,51280249,51281227,51281600,51281875,51282066,51282077,51282084,51283492,51284653,51285421,51288151,51288820,51289119,51289926,51289931,51289952,51289967,51289974,51291889,51295181"
+          },
+          {
+            "key": "visitor_data",
+            "value": "Cgtua3VFZW9lenkyMCi_sYe3BjIKCgJWThIEGgAgQw%3D%3D"
+          }
+        ]
+      },
+      {
+        "service": "GUIDED_HELP",
+        "params": [
+          {
+            "key": "logged_in",
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "service": "ECATCHER",
+        "params": [
+          {
+            "key": "client.version",
+            "value": "2.20240910"
+          },
+          {
+            "key": "client.name",
+            "value": "WEB"
+          }
+        ]
+      }
+    ],
+    "mainAppWebResponseContext": {
+      "loggedOut": true,
+      "trackingParam": "kV9fmPxhojXCz39TnrslLKPQSQR"
+    },
+    "webResponseContextExtensionData": {
+      "hasDecorated": true
+    }
+  },
+  "continuationContents": {
+    "liveChatContinuation": {
+      "continuations": [
+        {
+          "invalidationContinuationData": {
+            "invalidationId": {
+              "objectSource": 1056,
+              "objectId": "Y2hhdH43NXQ1dE10blpqaw==",
+              "topic": "chat~75t5tMtnZjk",
+              "subscribeToGcmTopics": true,
+              "protoCreationTimestampMs": "1726077522312"
+            },
+            "timeoutMs": 10000,
+            "continuation": "0ofMyAOYAhpeQ2lrcUp3b1lWVU5zWWtadVRYVTNNa1JpU1hab05tRmFaV0pCU0hOQkVnczNOWFExZEUxMGJscHFheG9UNnFqZHVRRU5DZ3MzTlhRMWRFMTBibHBxYXlBQk1BQSUzRCjpt9Xqu7uIAzAAQAJKcggBGAAgAEoKCAEQABgAIAAwAFDI8sWsuruIA1gEeACiAQQaAgg8qgEMEAAaACIAKgQIABAAsAEAwAEAyAHI8sWsuruIA-IBDAi_sYe3BhDSmtSaAugBAPABAPgBAIgCAJACAJoCDAjStIe3BhD1kJOTAVDv3o7ru7uIA1jv3JCVoruIA4IBBggEGAEoAIgBAKAB4PrJ7Lu7iAOyAQC6AQIICtABxrSHtwY%3D"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "addChatItemAction": {
+            "item": {
+              "liveChatTextMessageRenderer": {
+                "message": {
+                  "runs": [
+                    {
+                      "text": "thể thao là không ngừng bỏ cuộc"
+                    }
+                  ]
+                },
+                "authorName": {
+                  "simpleText": "Phúc Hoàng"
+                },
+                "authorPhoto": {
+                  "thumbnails": [
+                    {
+                      "url": "https://yt4.ggpht.com/ytc/AIdro_ltDeHhFStxGez2C37OLgTMKjOjLi3AqukEBt1csRY8qxk=s32-c-k-c0x00ffffff-no-rj",
+                      "width": 32,
+                      "height": 32
+                    },
+                    {
+                      "url": "https://yt4.ggpht.com/ytc/AIdro_ltDeHhFStxGez2C37OLgTMKjOjLi3AqukEBt1csRY8qxk=s64-c-k-c0x00ffffff-no-rj",
+                      "width": 64,
+                      "height": 64
+                    }
+                  ]
+                },
+                "contextMenuEndpoint": {
+                  "commandMetadata": {
+                    "webCommandMetadata": {
+                      "ignoreNavigation": true
+                    }
+                  },
+                  "liveChatItemContextMenuEndpoint": {
+                    "params": "Q2g0S0hBb2FRMGx4YWpGbGNUZDFOR2RFUmxkQlNISlJXV1JOUW05blgzY2FLU29uQ2hoVlEyeGlSbTVOZFRjeVJHSkpkbWcyWVZwbFlrRkljMEVTQ3pjMWREVjBUWFJ1V21wcklBRW9CRElhQ2hoVlF5MWFibUZPZWpGNU16UlVXblJWYlZneU5VaGZkbmM0QWtnQVVBRSUzRA=="
+                  }
+                },
+                "id": "ChwKGkNJcWoxZXE3dTRnREZXQUhyUVlkTUJvZ193",
+                "timestampUsec": "1726077518306281",
+                "authorExternalChannelId": "UC-ZnaNz1y34TZtUmX25H_vw",
+                "contextMenuAccessibility": {
+                  "accessibilityData": {
+                    "label": "Chat actions"
+                  }
+                }
+              }
+            },
+            "clientId": "CIqj1eq7u4gDFWAHrQYdMBog_w"
+          }
+        }
+      ]
+    }
+  }
+}

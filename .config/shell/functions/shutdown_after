@@ -1,0 +1,19 @@
+local seconds=$1
+
+if [[ -z "$seconds" || "$seconds" -le 0 ]]; then
+    echo "Vui lòng nhập số giây hợp lệ. Ví dụ: shutdown_after 10"
+    return 1
+fi
+
+while ((seconds > 0)); do
+    echo -ne "Tắt máy sau: $seconds giây\r"
+    sleep 1
+    ((seconds--))
+done
+
+if [[ $seconds -eq 300 ]]; then
+    notify-send "Shutdown after 5 minutes."
+fi
+
+echo -e "\nTắt máy ngay bây giờ!"
+shutdown -P 0

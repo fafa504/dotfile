@@ -1,0 +1,13 @@
+[General]
+loginMode=emptySession
+
+[LegacySession: saved at previous logout]
+count=0
+
+[Session: saved at previous logout]
+clientId1=1018d14b14b12f000176386689000000038020002
+count=1
+program1=firefox
+restartCommand1=/usr/lib/firefox/firefox,--sm-client-id,1018d14b14b12f000176386689000000038020002
+restartStyleHint1=0
+userId1=mintori
